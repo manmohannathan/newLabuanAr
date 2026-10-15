@@ -1,3 +1,7 @@
+# Supervisor demo update — 13 UMSKAL floors
+
+See SUPERVISOR-DEMO.md for the quick presentation flow and demo-content details.
+
 # Labuan Legends AR — interactive edition
 
 This is an updated copy of your uploaded project. Your original ZIP and XAMPP project were not changed.
@@ -16,11 +20,11 @@ On a phone, use your published **HTTPS** address. A plain HTTP address pointing 
 
 - Landing page with an explicit camera-start button and a camera-free 3D viewer.
 - A brief rising/scaling reveal for each landmark. It plays once per landmark per session and can be replayed. Losing the marker briefly does not repeatedly restart the animation.
-- Three numbered discovery points on each supplied model. They follow the model during rotation and zoom. The Discover list provides the same content when a point is out of view or difficult to tap.
-- Highlighted architectural features: UMSKAL tower, entrance and roofs; Clock Tower dials, roof and path.
+- Thirteen selectable demo floors on the new UMSKAL model and three discovery points on the Clock Tower model. They follow the model during rotation and zoom. The Discover list provides the same content when a point is out of view or difficult to tap.
+- Highlighted architectural features: UMSKAL floor bands 1–13; Clock Tower dials, roof and path.
 - Three short, user-controlled story chapters per landmark, with corresponding model highlights.
 - One optional challenge per landmark, with hints and visible feedback.
-- A two-landmark passport. Discover all three points OR answer the landmark's challenge correctly to earn its stamp. Repeated visits do not duplicate stamps.
+- A two-landmark passport. Complete all discoveries for that landmark OR answer the landmark's challenge correctly to earn its stamp. Repeated visits do not duplicate stamps.
 - Mouse/touch rotation, two-finger pinch zoom, mouse-wheel zoom, bounded zoom buttons and reset view.
 - English/Malay controls, discoveries, stories, questions and feedback.
 - Your original UMSKAL English and Malay audio, now with pause/resume. It pauses when tracking is lost, a different landmark is selected, a story/dialog is opened, or the browser is hidden. Language changes reset it to avoid mismatched narration.
@@ -33,7 +37,7 @@ Passport progress is saved on the same browser and site address. Clearing site d
 
 ## Content and scope
 
-The original campus information and visitor details have been retained, with a reminder to confirm visitor arrangements. They were not independently fact-checked. New discoveries describe the uploaded models. The short story chapters are an architectural tour, not newly researched folklore.
+The UMSKAL floor descriptions are fictional sample uses for the supervisor demonstration. The 13 floor bands are evenly spaced across the exported tower shaft and crown; they are approximate and are not surveyed floor plans. Floor 1 is the lowest demo level and Floor 13 the highest, excluding the roof. The original campus information and visitor details have been retained, with a reminder to confirm visitor arrangements. They were not independently fact-checked. Clock Tower discoveries describe its uploaded model. UMSKAL discoveries demonstrate a sample floor directory. The short story chapters are an architectural tour, not newly researched folklore.
 
 - No Clock Tower narration file was present, so its narration control is disabled with an explanation.
 - The original long UMSKAL recordings remain separate from the short interactive chapters. There is no timed lip-sync or audio-to-animation synchronization.
@@ -56,7 +60,7 @@ GitHub Pages reference: https://docs.github.com/en/pages/getting-started-with-gi
 - `coding/styles.css`: colours, themes, layout and responsive styling.
 - `index.html`: landing page and interface structure.
 
-Model parts are matched by their existing exported node names. If a model is replaced, update each discovery's `match` prefixes in `content.js` to fit the new model. Model sizes are normalized automatically. The landmark count in the passport follows the configured targets.
+Clock Tower model parts are matched by their existing exported node names. For UMSKAL, floorDiscovery.boundsNames identifies the main tower geometry; floor bands are generated across that height, not across the entire campus landscape. If a model is replaced, update each discovery's `match` prefixes in `content.js` to fit the new model. Model sizes are normalized automatically. The landmark count in the passport follows the configured targets.
 
 The supplied lightweight glTF loader is preserved. It supports the included assets; it is not a replacement for a complete animated/skinned glTF loader. Adding animated characters may require extending or replacing it with a compatible official loader.
 
